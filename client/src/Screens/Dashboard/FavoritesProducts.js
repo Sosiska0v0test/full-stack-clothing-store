@@ -14,7 +14,6 @@ function FavoritesProducts() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { } = useContext(SidebarContext);
   const { isLoading, isError, likedProducts } = useSelector(
     (state) => state.userGetFavoriteProducts
   );
@@ -27,7 +26,7 @@ function FavoritesProducts() {
     isSuccess,
   } = useSelector((state) => state.userDeleteFavoriteProducts);
 
-  const [canCheckout] = useState(true); // State to track checkout permission
+  const [canCheckout, setCanCheckout] = useState(true); // State to track checkout permission
 
   const deleteProductsHandler = () => {
     window.confirm('Ви дійсно хочете видалити всі товари з кошика?') &&
