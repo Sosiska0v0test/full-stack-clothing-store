@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SideBar from './SideBar';
 import Table from '../../Components/Table';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,7 +7,6 @@ import toast from 'react-hot-toast';
 import Loader from './../../Components/Notification/Loader';
 import { Empty } from '../../Components/Notification/Empty';
 import { GrBasket } from "react-icons/gr";
-import { SidebarContext } from '../../Context/DrawerContext';
 import { useNavigate } from 'react-router-dom';
 
 function FavoritesProducts() {
@@ -26,7 +25,7 @@ function FavoritesProducts() {
     isSuccess,
   } = useSelector((state) => state.userDeleteFavoriteProducts);
 
-  const [canCheckout, setCanCheckout] = useState(true); // State to track checkout permission
+  const [canCheckout] = useState(true); // State to track checkout permission
 
   const deleteProductsHandler = () => {
     window.confirm('Ви дійсно хочете видалити всі товари з кошика?') &&
