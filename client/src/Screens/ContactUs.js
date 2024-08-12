@@ -97,15 +97,17 @@ function ContactUs() {
           Ми на карті:
         </h3>
         <div className='flex justify-center items-center'>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1797.2939812235752!2d30.562603381303873!3d50.426990166302325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0JHQsNGC0YzQutGW0LLRidC40L3QsC3QnNCw0YLQuA!5e0!3m2!1suk!2sus!4v1717954181315!5m2!1suk!2sus"
-            width="100%"
-            height="450"
-            style={ { border: 0 } }
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade">
-          </iframe>
+        <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1797.2939812235752!2d30.562603381303873!3d50.426990166302325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0JHQsNGC0YzQutGW0LLRidC40L3QsC3QnNCw0YLQuA!5e0!3m2!1suk!2sus!4v1717954181315!5m2!1suk!2sus"
+  width="100%"
+  height="450"
+  style={ { border: 0 } }
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Map showing the location of our office"
+/>
+
         </div>
       </div>
     </Layout>
