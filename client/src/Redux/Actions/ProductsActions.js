@@ -2,7 +2,6 @@ import * as productsConstants from '../Constants/ProductsConstants';
 import * as productsAPIs from '../APIs/ProductsServices'
 import { ErrorsAction, tokenProtection } from '../Protection'
 import toast from 'react-hot-toast';
-import axios from 'axios';
 
 
 // get all product action 
