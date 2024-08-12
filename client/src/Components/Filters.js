@@ -1,7 +1,6 @@
 import { Listbox, Transition } from "@headlessui/react";
 import React, { Fragment } from "react";
 import { FaAngleDown, FaCheck } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import {
   SizeData,
   GenderData,
